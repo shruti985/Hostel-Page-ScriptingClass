@@ -1,0 +1,130 @@
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image:url(https://img.freepik.com/premium-photo/frame-vintage-script-background-faded-background-with-subtle-vin-post-social-art-photo-design_655090-897809.jpg);
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        .header{
+            height:40vh;
+            background-image:url(https://i.pinimg.com/originals/be/f9/db/bef9dbfe285b62280517ca46e2d95715.jpg);
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position:center;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            width:100%;
+        }
+        .logo-marquee{
+            width:100%;
+        }
+
+        #logo{
+            height:100px;
+            width:100px;
+            border-radius:50%;
+        }
+
+        .hostel-name h1{
+            font-size:4rem;
+            margin:0;
+            text-align:center;
+            color:rgb(19, 18, 18);
+        }
+
+        .section{
+            background:rgba(144, 135, 135, 0.403);
+            margin:2rem;
+            padding:1.5rem;
+            border-radius:10px;
+            box-shadow:0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .section h3{
+            color:rgb(117, 26, 26);
+        }
+
+        ul{
+            padding-left:1.5rem;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:1rem;
+        }
+
+        table, th, td{
+            border:1px solid #999;
+        }
+
+        th, td{
+            padding:10px;
+            text-align:center;
+        }
+
+        th{
+            background-color:rgb(117, 26, 26);
+            color:white;
+        }
+
+        .form{
+            display:flex;
+            justify-content:center;
+            margin:2rem;
+        }
+
+        form{
+            display:flex;
+            flex-direction:column;
+            width:350px;
+            border:10px solid rgb(117, 26, 26);
+            box-shadow:0px 20px 40px #454444;
+            padding:2rem;
+            align-items:center;
+        }
+
+        input, textarea{
+            width:100%;
+            margin:5px 0;
+        }
+
+        button{
+            margin-top:10px;
+            padding:5px 15px;
+        }
+
+        .image-hostel{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            margin:2rem;
+        }
+        .image-polygon{
+            display:flex;
+            justify-content: center;
+        }
+
+        iframe{
+            width:80%;
+            height:300px;
+            margin-top:1rem;
+            border:2px solid #555;
+        }
+        #student-form{
+            margin-left:40vw;
+            background-image: url(https://thumbs.dreamstime.com/b/light-blue-geometric-pattern-abstract-background-template-vector-can-be-used-cover-design-book-website-cd-advertising-107208708.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            backdrop-filter: blur(10px);
+            background-blend-mode: lighten;
+        }
+        #reason{
+            display: flex;
+            flex-direction: row;
+        }
+        a{
+            text-decoration: none;
+        }

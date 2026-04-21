@@ -1,0 +1,176 @@
+ *{
+        box-sizing:border-box;
+        margin:0;
+        padding:0;
+        
+    }
+    body{
+        background-color:rgb(71, 71, 111);
+        background-image: url(https://static.vecteezy.com/system/resources/thumbnails/003/031/764/small_2x/blue-wide-background-with-linear-blurred-gradient-free-vector.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container{
+        height:100vh;
+        width:100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:1rem;
+    }
+    form{
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:0.6rem;
+        /* border:1px solid black; */
+        padding:3rem;
+         background-color: rgba(112, 72, 72, 0.479);
+         border-top-left-radius: 13px;
+       border-bottom-left-radius: 13px;
+         /* backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); */
+        
+    }
+    .login{
+        box-shadow:1px 1px 10px black;
+       border-top-left-radius: 13px;
+       border-bottom-left-radius: 13px;
+    }
+
+    label{
+        font-size:1.5rem;
+        font-weight: 800;
+        color:white;
+        
+    }
+    input{
+        padding:0.4rem;
+        border-radius: 10px;
+    }
+        input:hover{
+            padding:0.5rem;
+        }
+    button{
+        padding:0.4rem;
+        font-size:18px;
+        width:10vw;
+        margin-top:1rem;
+        border-radius:10px;
+        background-color: blue;
+    }
+    button:hover{
+        background-color: rgba(0, 0, 255, 0.562);
+    }
+    a{
+        text-decoration: none;
+        color:white;
+         background-color: blue;
+    }
+    .form-cont{
+        display:flex;
+        flex-direction: row;
+    }
+    .login-img img{
+        border-top-right-radius:  13px;
+        border-bottom-right-radius: 13px;
+    }
+    .main-heading h1{
+        font-size:3rem;
+        color:white;
+        text-shadow: 2px 2px 3px;
+       font-family: cursive;
+    }
+    .recaptcha{
+        display:none;
+    }
+    #emailerror{
+        color:red;
+        font-size: small;
+    }
+    #passerror{
+        color:red;
+        font-size: small;
+    }
+    
+        /* .error-text { color: red; font-size: 0.8rem; display: block; margin-bottom: 10px; } */
+        
+        
+        #recaptchaBox { text-align: center; padding: 20px; border: 1px dashed #ccc; border-radius: 10px; margin-top: 20px; }
+        
+        .captcha-visual-box {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            background: #e0e0e0;
+            color: #444;
+            padding: 15px 25px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            font-size: 28px;
+            border: 2px solid #999;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            user-select: none;
+            font-style: italic;
+        }
+        .captcha-input-group { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+        .captcha-input-group input { width: 150px; text-align: center; padding: 8px; }
+        @media (max-width: 768px) {
+    .container {
+        height: auto;
+        min-height: 100vh;
+        padding: 2rem 1rem;
+    }
+
+    .main-heading h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .form-cont {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .login {
+        width: 90%;
+        border-radius: 13px;
+    }
+
+    form {
+        width: 100%;
+        padding: 2rem 1.5rem;
+        border-radius: 13px;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .login-img {
+        width: 90%;
+    }
+
+    .login-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 13px;
+    }
+
+    #recaptchaBox {
+        width: 100%;
+    }
+}

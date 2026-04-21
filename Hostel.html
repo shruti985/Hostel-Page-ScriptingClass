@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cauvery Hostel</title>
+    <link rel="stylesheet" href="./hostelstyle.css">
+</head>
+
+<body>
+    <div class="header">
+        <marquee behavior="scroll" direction="left" scrollamount="8" class="logo-marquee">
+            <img src="image.png" id="logo">
+        </marquee>
+
+        <div class="hostel-name">
+            <h1>Cauvery Hostel</h1>
+        </div>
+    </div>
+    <div class="section">
+        <h3>Hostel Facilities</h3>
+        <p>
+            Single, double and triple seater rooms available. Each room has a study table and chairs.
+            Spacious balcony provided. 24/7 security and Wi-Fi facility available. In-time for girls is
+            8:30 PM. Canteen and laundry facilities are available inside the hostel.
+        </p>
+    </div>
+    <div class="section">
+        <h3>DO's</h3>
+        <ul>
+            <li>Mandatory attendance between 8:30 PM and 9:30 PM</li>
+            <li>Maintain cleanliness in rooms and common areas</li>
+            <li>Follow hostel timings strictly</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>DON'Ts</h3>
+        <ul>
+            <li>No loud music or noise after 9:30 PM</li>
+            <li>No outsiders allowed inside rooms</li>
+            <li>Cooking inside rooms is strictly prohibited</li>
+            <li>No damage to hostel property</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Hostel Fees</h3>
+        <table>
+            <tr>
+                <th>Room Type</th>
+                <th>Fees (Per Year)</th>
+            </tr>
+            <tr>
+                <td>Single Seater</td>
+                <td>₹120000</td>
+            </tr>
+            <tr>
+                <td>Double Seater</td>
+                <td>₹90000</td>
+            </tr>
+            <tr>
+                <td>Triple Seater</td>
+                <td>₹70000</td>
+            </tr>
+        </table>
+    </div>
+    <div class="form">
+        <form>
+            <label>Enter your name</label>
+            <input type="text">
+
+            <label>Enter your Year</label>
+            <input type="text">
+
+            <label>Enter your Branch</label>
+            <input type="text">
+
+            <label>Enter your floor</label>
+            <input list="floor">
+            <datalist id="floor">
+                <option value="First" >
+                <option value="Second">
+                <option value="Third">
+            </datalist>
+
+            <label>Enter any feedback</label>
+            <textarea></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="image-hostel">
+        <img 
+            src="https://i.pinimg.com/originals/be/f9/db/bef9dbfe285b62280517ca46e2d95715.jpg"
+            width="400"
+            height="400"
+            usemap="#building"
+            alt="Hostel Building">
+
+        <map name="building">
+            <area 
+                shape="rect" 
+                coords="50,300,200,380" 
+                href="https://www.bing.com/images/search?q=college+image+nit+kkr"
+                target="_blank"
+                alt="College Images">
+        </map>
+       
+        <!-- https://png.pngtree.com/png-vector/20230727/ourlarge/pngtree-golden-circle-and-rectangle-with-polygon-frame-text-box-gold-award-vector-png-image_7316902.png -->
+
+        <iframe src="https://www.wikipedia.org/" title="Wikipedia"></iframe>
+    </div>
+        <div class="image-polygon">
+        <img 
+            src="https://png.pngtree.com/png-vector/20230727/ourlarge/pngtree-golden-circle-and-rectangle-with-polygon-frame-text-box-gold-award-vector-png-image_7316902.png"
+            width="400"
+            height="400"
+            usemap="#polygon"
+            alt="Hostel Building">
+
+        <map name="polygon">
+            <area 
+                shape="circle" 
+                coords="137,262,125" 
+                
+                href="https://png.pngtree.com/png-vector/20230727/ourlarge/pngtree-golden-circle-and-rectangle-with-polygon-frame-text-box-gold-award-vector-png-image_7316902.png"
+                target="_blank"
+                alt="College Images">
+        </map>
+        </div>
+        <div class="section">
+            <h3>For Leave Form</h3>
+            <ul>
+                <a href="./LogIn.html"><li>SIGN IN</li></a>
+                <a href="./SignUp.html"><li>SIGN UP</li></a>
+            </ul>
+        </div>
+       
+        <!-- https://png.pngtree.com/png-vector/20230727/ourlarge/pngtree-golden-circle-and-rectangle-with-polygon-frame-text-box-gold-award-vector-png-image_7316902.png -->
+         
+        <form id="student-form" method="post" novalidate target="_blank" action="./myGoals.html" style="margin-right:30vw;">
+            <label>Student Name</label>
+            <input type="text" name="student-name">
+            <label>Student id</label>
+            <input type="text" name="student-id">
+            <label>Email</label>
+            <input type="text" name="email">
+            <label>Phone no.</label>
+            <input type="tel" pattern="^\+91[][0-9]{5}-[0-9]{5}$" name="phone">
+            <label>Leave date from</label>
+            <input type="date" min="2026-02-03" name="from-date"/>
+            <label>Leave date to</label>
+            <input type="date" max="2026-07-15" name="to-date"/>
+            <div style=" margin-bottom:1rem;margin-top:0.6rem;border:1px solid gray;display:flex;flex-direction: column; align-items: center;justify-content: center;padding:1rem;">
+            <label style="margin-bottom:6px;font-weight: bold;">Reason for Leave</label>
+            <label name="reason" id="reason">
+            <input type="radio">Medical</label>
+            <label name="reason" id="reason">
+            <input type="radio">Urgent</label>
+            <label name="reason" id="reason">
+            <input type="radio">Marriage</label>
+            <label name="reason" id="reason">
+            <input type="radio" id="other" onclick="showTextArea(true)">Others</label>
+            <textarea id="other-text" style="display:none"></textarea>
+            </div>
+            <div style="margin-bottom:1rem;border:1px solid gray;display:flex;flex-direction: column; align-items: center;justify-content: center;padding:1rem;">
+            <label style="margin-bottom:6px;font-weight: bold;">Location</label>
+            <label id="reason"><input type="checkbox" >Shimla</label>
+            <label id="reason"><input type="checkbox" >Gurugram</label>
+            <label id="reason"><input type="checkbox" >Bhiwani</label>
+            <label id="reason"><input type="checkbox" >Kanpur</label>
+            <label id="reason"><input type="checkbox" >uttrakhand</label>
+            <textarea placeholder="Type if any other"></textarea>
+            </div>
+            <button type="submit" onClick="alert('Successfully submit')">Submit</button>
+        </form>
+        </fieldset>
+    </div>
+</body>
+<script>
+ function showTextArea(val){
+    document.getElementById("other-text").style.display=val?"block":"none";
+ }
+</script>
+</html>

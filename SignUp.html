@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing:border-box;
+        margin:0;
+        padding:0;
+    }
+    .container{
+        height:100vh;
+        width:100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(47, 60, 60);
+        background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/09/Free-Download-Album-Cover-Background-.jpg);
+    }
+    form{
+         display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+        gap:0.6rem;
+        border:8px ridge rgb(64, 64, 193);
+        padding:1.5rem;
+        border-radius:10px;
+        box-shadow:5px 5px 10px black;
+        background-color: rgba(255, 255, 255, 0.403);
+    }
+    button{
+        padding:0.4rem;
+        background-color: rgb(56, 56, 161);
+        color:white;
+        border-radius: 5px;
+    }
+    .section{
+        display: flex;
+       align-items: center;
+        gap:0.4rem;
+        margin:0.5rem;
+    }
+.section label{
+    width:130px;
+}
+
+.section input{
+    flex:1;
+}
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    input{
+        padding:0.3rem;
+        border-radius: 5px;
+    }#forgot{
+        color:black;
+        margin-left: 0.5rem;
+       
+    }
+    .login-btn{
+         margin-top: 0.3rem;
+    }
+    .recaptcha{
+        display:none;
+    }
+    @media (max-width:600px){
+    form{
+        width:90%;
+        padding:1rem;
+    }
+
+    .section{
+        flex-direction: column;
+        align-items: flex-start;
+        width:100%;
+    }
+
+    .section label{
+        width:100%;
+        margin-bottom:3px;
+    }
+
+    .section input{
+        width:100%;
+    }
+
+    button{
+        width:100%;
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <div class="login">
+           <form id="loginForm">
+    <div class="details">
+        <div class="section">
+            <label>Enter Name</label>
+            <input type="text" size="16" required>
+        </div>
+         <div class="section">
+            <label>Enter Branch</label>
+            <input type="text" size="16" required>
+        </div>
+        <div class="section">
+            <label>Enter email</label>
+            <input type="text" id="email" size="16" required>
+            <label id="emailerror"></label>
+        </div>
+        <small id="emailError" style="color:red;"></small>
+
+        <div class="section">
+            <label>Enter password</label>
+            <input type="password" id="password" minlength="8" required>
+        </div>
+        
+        <small id="passwordError" style="color:red;"></small>
+    </div>
+
+    <div class="login-btn">
+        <a href="./Hostel.html"><button type="submit">Sign Up</button></a>
+    </div>
+
+    <a id="forgot">Forgot your password?</a>
+</form>
+<div class="recaptcha" id="recaptchaBox" style="display:none;">
+                <label>What is the sum of these two numbers?</label>
+                <label id="number"></label>
+                <input type="number" id="captchaInput">
+                <button onclick="validateCaptcha()">Verify</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let email = document.getElementById("email").value.trim();
+    let password = document.getElementById("password").value.trim();
+
+    let emailError = document.getElementById("emailError");
+    let isValid = true;
+    emailError.textContent = "";
+    if (!email.endsWith("@nitkkr.ac.in")) {
+        emailError.textContent = "Email must end with @nitkkr.ac.in";
+        isValid = false;
+    }
+       
+    if (isValid) {
+         document.getElementById("recaptchaBox").style.display = "block";
+    num1 = Math.floor(Math.random() * 10) + 1;
+    num2 = Math.floor(Math.random() * 10) + 1;
+    document.getElementById("number").innerText = num1 + " + " + num2;
+}
+    
+});
+function validateCaptcha() {
+    let userAnswer = parseInt(document.getElementById("captchaInput").value);
+    if(userAnswer === (num1 + num2)) {
+        window.location.href = "./Hostel.html";
+    } else {
+        alert("Incorrect answer. Please try again.");
+    }
+}
+</script>
+
+</html>
